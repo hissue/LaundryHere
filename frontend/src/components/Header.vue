@@ -1,44 +1,122 @@
 <template>
   <header>
-    <div class="collapse bg-dark" id="navbarHeader">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4 py-4">
-            <h4 class="text-white">사이트맵</h4>
-            <ul class="list-unstyled">
-              <li>
-                <router-link to="/" class="text-white">메인 화면</router-link>
-              </li>
-              <li>
-                <router-link to="/login" class="text-white" v-if="!$store.state.accout.id">로그인</router-link>
-                <a to="/login" class="text-white" @click="logout()" v-else>로그아웃</a>
-              </li>
+    <div id="header" class="">
+      <h1 class="logo"><a href="/">런드리</a></h1>
+
+      <!-- Start header-top -->
+      <div class="header-top">
+        <ul>
+          <li><a href="/login">로그인</a></li>
+          <li><a href="/signin">회원가입</a></li>
+          <li><a href="/customer-support">고객센터</a>
+            <ul>
+              <li><a href="/customer-support/notice">공지사항</a></li>
+              <li><a href="/customer-support/many-question">자주묻는 질문</a></li>
             </ul>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
-    </div>
-    <div class="navbar navbar-dark bg-dark shadow-sm">
-      <div class="container">
-        <a href="#" class="navbar-brand d-flex align-items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
-               stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2"
-               viewBox="0 0 24 24">
-            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
-            <circle cx="12" cy="13" r="4"/>
-          </svg>
-          <strong>Album</strong>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
-                aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <!-- End header-top -->
+
+      <!-- Start Header main -->
+      <div id="gnb-wrap">
+        <ul id="gnb">
+          <li class="gnb1"><a href="/manual">서비스소개</a></li>
+          <li class="gnb2"><a href="/howuse">이용방법</a></li>
+          <li class="gnb3"><a href="/price">가격정보</a></li>
+          <li class="gnb4"><a href="/order">세탁신청</a>
+            <div class="subdepth show_menu" style="display: none; height: 200px; padding-top: 40px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+              <div class="tit-tx">
+                <strong>이용정보</strong>
+                이벤트 정보를 <br>소개합니다.
+              </div>
+              <div class="inner">
+                <ul>
+                  <li><a href="/kr/useInfo/discount.do">할인정보</a></li>
+                  <li><a href="/kr/useInfo/membership.do">멤버쉽</a></li>
+                  <li><a href="/kr/useInfo/eventList.do">세일 및 이벤트</a></li>
+
+                </ul>
+                <ul>
+                  <li><a href="/kr/useInfo/cleanApp.do">크린앱</a></li>
+                  <li><a href="/kr/useInfo/group.do">단체세탁</a></li>
+                  <li><a href="/kr/useInfo/manless.do">무인세탁함</a></li>
+                </ul>
+              </div>
+              <div class="gnb-brn">
+
+                <a href="http://www.cleantopia.com/kr/useInfo/discount.do">
+                </a>
+
+              </div>
+            </div>
+          </li>
+          <li class="gnb5"><a href="/uselist">이용내역</a>
+            <div class="subdepth show_menu" style="display: none; height: 200px; padding-top: 40px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+              <div class="tit-tx">
+                <strong>이용정보</strong>
+                이벤트 정보를 <br>소개합니다.
+              </div>
+              <div class="inner">
+                <ul>
+                  <li><a href="/kr/useInfo/discount.do">할인정보</a></li>
+                  <li><a href="/kr/useInfo/membership.do">멤버쉽</a></li>
+                  <li><a href="/kr/useInfo/eventList.do">세일 및 이벤트</a></li>
+
+                </ul>
+                <ul>
+                  <li><a href="/kr/useInfo/cleanApp.do">크린앱</a></li>
+                  <li><a href="/kr/useInfo/group.do">단체세탁</a></li>
+                  <li><a href="/kr/useInfo/manless.do">무인세탁함</a></li>
+                </ul>
+              </div>
+              <div class="gnb-brn">
+
+                <a href="http://www.cleantopia.com/kr/useInfo/discount.do">
+                </a>
+
+              </div>
+            </div>
+          </li>
+          <li class="gnb6"><a href="/mypage">마이페이지</a>
+            <div class="subdepth show_menu" style="display: none; height: 200px; padding-top: 40px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+              <div class="tit-tx">
+                <strong>회사소개</strong>
+                크린토피아는 고객만족을<br>위해 항상 노력합니다.
+              </div>
+              <div class="inner">
+                <ul>
+                  <li><a href="/kr/company/intro.do">CEO인사말</a></li>
+                  <li><a href="/kr/company/history.do">회사개요 및 연혁</a></li>
+                  <li><a href="/kr/company/clean01.do">크린토피아 세탁</a></li>
+                  <li><a href="/kr/company/cfList.do">홍보센터</a></li>
+                </ul>
+                <ul>
+                  <li><a href="/kr/company/reportList.do">보도자료</a></li>
+                  <li><a href="/kr/company/society.do">사회공헌</a></li>
+                  <li><a href="/kr/company/recruit.do">인재채용</a></li>
+                  <li><a href="/kr/company/location.do">찾아오시는길</a></li>
+                </ul>
+              </div>
+              <div class="gnb-brn">
+
+                <a href="http://www.cleantopia.com/kr/company/intro.do">
+                  <!--<img src="/_tempupdata/2018/01/10/20180110102204925754.jpg" alt="2011년 ~ 2014년:4년 연속 대한민국 명품 브랜드 대상">-->
+                </a>
+
+              </div>
+            </div>
+          </li>
+        </ul><!-- /gnb -->
+
       </div>
+      <!-- End Header main -->
     </div>
   </header>
 </template>
 
 <script>
+
 export default {
   name: 'Header',
   setup(){
@@ -46,3 +124,7 @@ export default {
 }
 
 </script>
+<style>
+  @import '../style/common-styles.css';
+
+</style>

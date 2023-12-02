@@ -15,7 +15,7 @@
 <script>
 import axios from "axios";
 import {reactive} from "vue";
-import Card from "@/components/Card";
+import Card from "@/components/Card.vue";
 
 export default {
   name: "Home",
