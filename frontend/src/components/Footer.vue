@@ -66,27 +66,29 @@ export default {
 .copyright {
   padding: 28px 0;
   margin-top: 55px;
-  background-color: #f5f6fa; }
-.copyright span,
-.copyright a {
+  background-color: rgb(248,249,250);
+}
+.copyright span, .copyright a {
   color: #878787;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
-  transition: all 0.3s linear; }
+  transition: all 0.3s linear;
+}
 .copyright a:hover {
-  color: #2471c8; }
-
+  color: #2471c8;
+}
 .copyright-menu ul {
   text-align: right;
-  margin: 0; }
-
+  margin: 0;
+}
 .copyright-menu li {
   display: inline-block;
-  padding-left: 20px; }
-
+  padding-left: 20px;
+}
 .back-to-top {
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+}
 .back-to-top .btn-dark {
   width: 35px;
   height: 35px;
@@ -95,15 +97,17 @@ export default {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #2471c8;
-  border-color: #2471c8;
+  background: #2e84fa;
+  border-color: #2e84fa;
   display: none;
   z-index: 999;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
-  transition: all 0.3s linear; }
+  transition: all 0.3s linear;
+}
 .back-to-top .btn-dark:hover {
   cursor: pointer;
-  background: #2e84fa;
-  border-color: #2e84fa; }
+  background: #2471c8;
+  border-color: #2471c8;
+}
 </style>
