@@ -1,77 +1,20 @@
 <template>
-    <div id="content" class="brd-wr">
-      <div class="tit-area">
-        <h2>로그인</h2>
-        <p class="sub-tx">크린토피아 로그인 페이지 입니다.</p>
-      </div><!-- /tit-area -->
-
-      <div class="brd-bx">
-
-        <div class="inner">
-
-          <div class="login-bx">
-            <div class="left">
-              <h3>로그인</h3>
-              <ul class="log-tab">
-                <li class="active"><a href="#tc1" id="hom" name="hom">홈페이지 회원</a></li>
-                <li class=""><a href="#tc2" id="app" name="app">크린앱 회원</a></li>
-              </ul>
-              <!-- 홈페이지 회원 -->
-              <form name="wform" method="post">
-                <div class="tc" id="tc1" style="display: block;">
-                  <input type="hidden" name="return_url" id="return_url" value="">
-                  <input type="hidden" name="searchType" id="searchType">
-                  <p class="inp"><input type="text" name="m_id" id="m_id" value="" class="input id" placeholder="아이디" maxlength="50"></p>
-                  <p class="inp"><input type="password" name="m_passwd" id="m_passwd" class="input pw" placeholder="비밀번호" maxlength="20"></p>
-                  <label class="chk"> 아이디 저장 <input type="checkbox" name="idSave" id="idSave" value="Y"> </label>
-                  <div class="btn-box">
-                    <a href="javascript:void(0);" class="btn btn-blue btn-lg" onclick="onLogin('W');">로그인</a>
-                  </div>
-                </div>
-              </form>
-              <!-- 크린앱 회원 -->
-              <form name="aform" method="post">
-                <div class="tc" id="tc2" style="display: none;">
-                  <input type="hidden" name="return_url" id="return_url" value="">
-                  <input type="hidden" name="searchType" id="searchType">
-                  <p class="inp"><input type="text" name="m_id" id="m_id" value="" class="input id" placeholder="아이디" maxlength="50"></p>
-                  <p class="inp"><input type="password" name="m_passwd" id="m_passwd" class="input pw" placeholder="비밀번호" maxlength="20"></p>
-                  <label class="chk"> 아이디 저장 <input type="checkbox" name="idSave" id="idSave" value="Y"></label>
-                  <div class="btn-box">
-                    <a href="javascript:void(0);" class="btn btn-blue btn-lg" onclick="onLogin('A');">로그인</a>
-                  </div>
-                </div>
-              </form>
-            </div><!-- /left -->
-            <div class="right">
-              <p class="tx01">안녕하세요.</p>
-              <dl>
-                <dt>회원가입</dt>
-                <dd>
-                  가입 후 이벤트 참여 및 다양한 정보를 제공 받으실 수 있습니다.
-                  <span class="btnz">
-										<a href="/kr/member/join.do" class="btlogin">회원가입</a>
-									</span>
-                </dd>
-              </dl>
-              <dl>
-                <dt>아이디/비밀번호 찾기</dt>
-                <dd>
-                  아이디 또는 비밀번호 정보를 찾으실 수 있습니다.
-                  <span class="btnz">
-										<a href="/kr/infoFind.do" class="btlogin">아이디 찾기</a>
-										<a href="/kr/infoFind.do" class="btlogin">비밀번호 찾기</a>
-									</span>
-                </dd>
-              </dl>
-            </div><!-- /right -->
-          </div><!-- /login-bx-->
-
-        </div><!-- /inner -->
-
-      </div><!-- /brd-bx -->
-
+  <form class="form-signin">
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="name@example.com" v-model="state.form.email"
+           required>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" v-model="state.form.password"
+           required>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
     </div>
+    <button class="btn btn-lg btn-primary btn-block" @click="submit()">Sign in</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+  </form>
 
 </template>
 
@@ -101,6 +44,40 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
 
 </style>

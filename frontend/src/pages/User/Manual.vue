@@ -1,15 +1,8 @@
 <script>
-export default {
-  setup(){
-
-  }
-}
 </script>
 
 <template>
-<Manual>
-
-</Manual>
+  ddddd
 </template>
 
 <style scoped>
