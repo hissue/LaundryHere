@@ -10,29 +10,19 @@
             <!-- End Col -->
             <div class="col-md-6">
               <div class="copyright-menu">
-                <ul>
+                <ul style="padding-left: 0px;">
                   <li>
-                    <a href="#">
+                    <a href="https://www.facebook.com/">
                       <i class="fa fa-facebook"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="https://twitter.com/">
                       <i class="fa fa-twitter"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
-                      <i class="fa fa-google-plus"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-linkedin"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
+                    <a href="https://www.instagram.com/">
                       <i class="fa fa-instagram"></i>
                     </a>
                   </li>
@@ -109,5 +99,21 @@ export default {
   cursor: pointer;
   background: #2471c8;
   border-color: #2471c8;
+}
+
+@media (max-width: 990px) {
+  .row {
+    flex-direction: column-reverse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .row .col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 5px 0px;
+  }
 }
 </style>

@@ -1,5 +1,17 @@
 <template>
   <header>
+    <div class="header-top">
+      <ul>
+        <li><a href="/login">로그인</a></li>
+        <li><a href="/signin">회원가입</a></li>
+        <li><a href="/customer-support">고객센터</a>
+          <ul>
+            <li><a href="/customer-support/notice">공지사항</a></li>
+            <li><a href="/customer-support/many-question">자주묻는 질문</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
     <div id="header" class="">
       <section>
         <div id="header-main">
@@ -31,11 +43,6 @@
                   <span>이용내역</span>
                 </div>
               </div>
-              <div id="menu">
-                <div class="detail" aria-current="false">
-                  <span>고객센터</span>
-                </div>
-              </div>
             </nav>
             <div class="mypage">
               <button class="alter" type="button" aria-label="알림 팝업">
@@ -60,70 +67,23 @@
 <!--            <header class=""><section><h1 class="">알림</h1><button class="">모두 읽기</button></section><button class="NotificationPopupstyle__CloseButton-sc-jzfvpw-4 hAmBPX"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z" fill="#000"></path></svg></button></header><section class="NotificationPopupstyle__Section-sc-jzfvpw-5 NotificationPopupstyle__ContentSection-sc-jzfvpw-6 jfgcxF geKENK"><div class="NotificationPopupstyle__Scrollable-sc-jzfvpw-7 fBvoIb"><div class="NotificationPopupstyle__NotificationCard-sc-jzfvpw-8 gLxreM"><a href="https://programmers.co.kr/notifications/1040937" class="NotificationPopupstyle__NotificationLink-sc-jzfvpw-9 dapIPl"><div><span></span><h2>과제테스트 알림</h2></div><div><p>과제관 - 영화 좌석 예매 페이지 구축의 답안이 제출되지 않았습니다</p><time datetime="2023-08-30T21:20:03.708+09:00">23년 08월 30일 21:20</time></div></a></div><div class="NotificationPopupstyle__NotificationCard-sc-jzfvpw-8 gLxreM"><a href="https://programmers.co.kr/notifications/1040936" class="NotificationPopupstyle__NotificationLink-sc-jzfvpw-9 dapIPl"><div><span></span><h2>과제테스트 알림</h2></div><div><p>과제관 - 쇼핑몰 SPA의 답안 제출을 확인했습니다</p><time datetime="2023-08-30T21:17:05.821+09:00">23년 08월 30일 21:17</time></div></a></div><div class="NotificationPopupstyle__NotificationCard-sc-jzfvpw-8 gLxreM"><a href="https://programmers.co.kr/notifications/1040869" class="NotificationPopupstyle__NotificationLink-sc-jzfvpw-9 dapIPl"><div><span></span><h2>과제테스트 알림</h2></div><div><p>과제관 - 영화 좌석 예매 페이지 구축 테스트에 응시 하셨습니다</p><time datetime="2023-08-30T18:19:50.918+09:00">23년 08월 30일 18:19</time></div></a></div><div class="NotificationPopupstyle__NotificationCard-sc-jzfvpw-8 gLxreM"><a href="https://programmers.co.kr/notifications/1040865" class="NotificationPopupstyle__NotificationLink-sc-jzfvpw-9 dapIPl"><div><span></span><h2>과제테스트 알림</h2></div><div><p>과제관 - 쇼핑몰 SPA 테스트에 응시 하셨습니다</p><time datetime="2023-08-30T18:16:13.463+09:00">23년 08월 30일 18:16</time></div></a></div><div class="NotificationPopupstyle__NotificationCard-sc-jzfvpw-8 gLxreM"><a href="https://programmers.co.kr/notifications/1004541" class="NotificationPopupstyle__NotificationLink-sc-jzfvpw-9 dapIPl"><div><span></span><h2>과제테스트 알림</h2></div><div><p>과제관 - 프로그래밍 언어 검색의 답안 제출을 확인했습니다</p><time datetime="2023-07-14T19:22:57.498+09:00">23년 07월 14일 19:22</time></div></a></div></div></section><a href="https://programmers.co.kr/notifications" class="">전체 알림 보기</a></article></div>-->
               </div>
             </div>
+            <button class=""><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 18h18v-2H3v2Zm0-5h18v-2H3v2Zm0-7v2h18V6H3Z" fill="#000"></path></svg></button>
           </div>
         </div>
       </section>
-      <div role="menuitem" class="header-in" aria-expanded="false" id="header-in" style="height: 300px; z-index: 8097; border-bottom: 1px solid rgb(220, 225, 230)">
-        <div><nav>
+      <div role="menuitem" class="header-in" aria-expanded="false" id="header-in" style="height: auto; border-bottom: 1px solid rgb(220, 225, 230)">
+        <div>
+          <nav>
             <ul>
+              <li class="tit-tx"><strong>블랙라벨</strong>세탁 서비스<br>알아보아요</li>
               <li>
-                ddddddddddddddddddddd
-              </li>
-              <li>
-                <ul
-                    class="DesktopGnbSubMenuItemstyle__TwoDepthNavList-sc-usvvmw-2 bSIgPM"
-                >
-                  <li>
-                    <a
-                        target="_self"
-                        href="https://career.programmers.co.kr/competitions"
-                        rel="noreferrer"
-                        class="NavLinkstyle__Link-sc-a5lqib-2 bnEtuJ DesktopGnbSubMenuItemstyle__TwoDepthNavLink-sc-usvvmw-4 fbOEDL"
-                        data-hackle-value='{"key":"gnb_clicked","properties":{"entry_route":"https://school.programmers.co.kr/","depth1":"career","depth2":"채용 프로그램"}}'
-                        tabindex="-1"
-                    ><div>
-                    <span class="NavLinkstyle__LinkText-sc-a5lqib-1 jsnXoS"
-                    >채용 프로그램</span
-                    >
-                    </div></a
-                    >
-                  </li>
+                <ul>
+                  <li><a><div><span class="">채용 프로그램</span></div></a></li>
                 </ul>
               </li>
-              <li>
-                <ul
-                    class="DesktopGnbSubMenuItemstyle__TwoDepthNavList-sc-usvvmw-2 bSIgPM"
-                >
-                  <li>
-                    <a
-                        target="_self"
-                        href="https://career.programmers.co.kr/top_programmers/introduce"
-                        rel="noreferrer"
-                        class="NavLinkstyle__Link-sc-a5lqib-2 bnEtuJ DesktopGnbSubMenuItemstyle__TwoDepthNavLink-sc-usvvmw-4 fbOEDL"
-                        data-hackle-value='{"key":"gnb_clicked","properties":{"entry_route":"https://school.programmers.co.kr/","depth1":"career","depth2":"탑프로그래머스"}}'
-                        tabindex="-1"
-                    ><div>
-                    <span class="NavLinkstyle__LinkText-sc-a5lqib-1 jsnXoS"
-                    >탑프로그래머스</span
-                    >
-                    </div></a
-                    >
-                  </li>
-                  <li>
-                    <a
-                        target="_self"
-                        href="https://career.programmers.co.kr/resumes"
-                        rel="noreferrer"
-                        class="NavLinkstyle__Link-sc-a5lqib-2 bnEtuJ DesktopGnbSubMenuItemstyle__TwoDepthNavLink-sc-usvvmw-4 fbOEDL"
-                        data-hackle-value='{"key":"gnb_clicked","properties":{"entry_route":"https://school.programmers.co.kr/","depth1":"career","depth2":"이력서"}}'
-                        tabindex="-1"
-                    ><div>
-                    <span class="NavLinkstyle__LinkText-sc-a5lqib-1 jsnXoS"
-                    >이력서</span
-                    >
-                    </div></a
-                    >
-                  </li>
+              <li style="border: none">
+                <ul>
+                  <li><a><div><span class="">채용 프로그램</span></div></a></li>
                 </ul>
               </li>
             </ul>
@@ -132,6 +92,38 @@
       </div>
     </div>
   </header>
+  <!--End Header Section-->
+  <!--  m_rmenu-->
+  <div class="m_menu">
+    <div class="inner">
+      <ul class="right_menu">
+        <li class="gnb8"><a href="#">블랙라벨</a>
+          <ul class="mdepth2" style="display: none;">
+            <li><a href="/kr/blacklabel/blackLabel.do">블랙라벨 소개</a></li>
+            <li><a href="/kr/blacklabel/blackClothes.do">명품 의류</a></li>
+            <li><a href="/kr/blacklabel/blackFootwear.do">명품 신발</a></li>
+            <li><a href="/kr/blacklabel/blackBag.do">명품 가방</a></li>
+            <li><a href="/kr/blacklabel/blackLeather.do">가죽 모피</a></li>
+          </ul>
+        </li>
+        <li class="gnb1"><a href="#">세탁서비스</a>
+          <ul class="mdepth2" style="display: none;">
+            <li><a href="/kr/laundry/clothes.do">일반의류</a></li>
+            <li><a href="/kr/laundry/shirt.do">와이셔츠</a></li>
+            <li><a href="/kr/laundry/blanket.do">이불</a></li>
+            <li><a href="/kr/laundry/sneakers.do">운동화</a></li>
+            <li><a href="/kr/laundry/outdoor.do">아웃도어</a></li>
+            <li><a href="/kr/laundry/school.do">교복</a></li>
+            <li><a href="/kr/laundry/cap.do">모자/인형/가방</a></li>
+            <li><a href="/kr/laundry/special.do">특수크리닝</a></li>
+            <li><a href="/kr/laundry/royal.do">로얄크리닝</a></li>
+            <li><a href="/kr/laundry/today.do">당일세탁서비스</a></li>
+            <li><a href="/kr/laundry/clothing_storage.do">의류보관서비스</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -154,10 +146,141 @@ export default {
     text-decoration: none;
   }
 
+  ul,li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
   #header {
     position: relative;
     background-color: rgb(255, 255, 255);
+  }
+
+  .header-top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 20px;
     z-index: 5;
+  }
+
+  .header-top>ul {
+    display: inline-block;
+  }
+
+  .header-top>ul>li {
+    position: relative;
+    display: inline-block;
+    list-style:none;
+  }
+
+  .header-top>ul>li>a {
+    position: relative;
+    display: block;
+    color: #959595;
+    font-size: 12px;
+    padding: 0 10px;
+    line-height: 26px;
+    text-decoration: none;
+  }
+
+  .header-top>ul>li>a:hover {
+    text-decoration: underline;
+  }
+
+  .header-top>ul>li>a:after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #eaeaea;
+    width: 1px;
+    height: 12px;
+    top: 50%;
+    right: 0;
+    margin-top: -6px;
+  }
+
+  .header-top>ul>li>ul>li {
+    list-style:none;
+  }
+
+  .header-top>ul>li>ul>li>a {
+    text-decoration: none;
+  }
+
+  .header-top .lang {
+    border: #cccccc 1px solid;
+    border-radius: 12px;
+    padding: 0 2px;
+  }
+
+  .header-top .lang li a {
+    font-size: 11px;
+    line-height: 1;
+  }
+
+  .header-top .lang li a.on {
+    color: #2471c8;
+    font-weight: 700;
+  }
+
+  .header-top .lang li a:after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #eaeaea;
+    width: 1px;
+    height: 10px;
+    top: 50%;
+    right: 0;
+    margin-top: -5px;
+  }
+
+  .header-top>ul>li:last-child a:after {
+    display: none;
+  }
+
+  .header-top>ul>li:hover>ul {
+    display: block;
+  }
+
+  .header-top>ul>li>ul {
+    display: none;
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    margin: 0 0 0 -70px;
+    border: #e5e5e5 1px solid;
+    border-radius: 3px;
+    width: 140px;
+    background-color: #fff;
+    padding: 0;
+  }
+
+  .header-top>ul>li>ul:before {
+    content: "";
+    width: 12px;
+    height: 6px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: -6px 0 0 -6px;
+  }
+
+  .header-top>ul>li>ul li a {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    border-bottom: #e5e5e5 1px solid;
+  }
+
+  .header-top>ul>li>ul li a:hover {
+    color: #2471c8;
   }
 
   #header>section {
@@ -174,10 +297,9 @@ export default {
     -webkit-box-pack: justify;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
     height: 64px;
     padding: 0px 20px;
-
   }
 
   #header-main .mypage {
@@ -319,7 +441,7 @@ export default {
     position: absolute;
     top: calc(100% + 8px);
     right: 0px;
-    z-index: 8100;
+    z-index: 5;
     width: 320px;
     animation: 0.2s ease-out 0s 1 normal forwards running open;
     display: none;
@@ -412,13 +534,14 @@ export default {
     overflow: hidden;
     height: 0px;
     transition: height 0.3s ease-out 0s;
+    display: none;
   }
 
   #header-in>div>nav {
     display: flex;
     -webkit-box-pack: center;
     justify-content: center;
-    padding: 16px 0px 24px;
+    padding: 24px 0px 24px;
   }
 
   #header-in>div>nav>ul {
@@ -426,14 +549,15 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
-    max-width: 1160px;
-    padding-left: 10px;
+    max-width: 1250px;
+    padding-left: 24px;
   }
 
   #header-in>div>nav>ul>li {
     list-style: none;
     letter-spacing: -0.009em;
     line-height: 1.6;
+    border-right: 1px solid #eaeaeb;
   }
 
   #header-in>div>nav>ul>li>ul {
@@ -468,6 +592,115 @@ export default {
     line-height: 150%;
     color: rgb(15, 19, 23);
     transition: color 0.2s ease-out 0s;
+  }
+
+  .tit-tx {
+    position: relative;
+    float: left;
+    color: #959595;
+  }
+
+  .tit-tx>strong {
+    font-size: 24px;
+    color: #2471c8;
+    line-height: 1;
+    display: block;
+    margin: 0 0 15px 0;
+  }
+
+  @media (max-width: 950px) {
+    #header-right {
+      width: unset;
+      flex: unset;
+      margin-right: 8px;
+      gap: 4px;
+    }
+
+    #header-right>nav {
+      display: none;
+    }
+
+    .header-top {
+      display: none;
+    }
+
+  }
+
+  @media (min-width: 950px) {
+    #header-right>button {
+      display: none;
+    }
+  }
+
+  @media (max-width: 950px) {
+    .m_menu {
+      position: fixed;
+      top: 65px;
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+      background-color: #fff;
+    }
+
+    .m_menu .inner {
+      position: relative;
+      background-color: #fff;
+      padding: 0;
+      overflow-y: auto;
+    }
+
+    .m_menu .right_menu {
+      margin: 0;
+      padding-left: 0px;
+    }
+
+    .m_menu .right_menu > li {
+      overflow: hidden;
+      border-top: #f6f7fa 1px solid;
+    }
+
+    .m_menu .right_menu > li > a {
+      position: relative;
+      display: block;
+      line-height: 41px;
+      padding: 0 40px 0 20px;
+      background-color: #fff;
+      font-size: 13px;
+      color: #333;
+      margin-top: -1px;
+    }
+
+    .m_menu .right_menu > li > ul {
+      background-color: #f6f7fa;
+      margin: 0 -1px -1px 0;
+      overflow: hidden;
+    }
+
+    .m_menu .right_menu > li > ul > li {
+      float: left;
+      width: 50%;
+      border-bottom: #eaeaea 1px solid;
+      border-right: #eaeaea 1px solid;
+    }
+
+    .m_menu .right_menu > li > ul > li > a {
+      position: relative;
+      padding: 0 40px 0 20px;
+      display: block;
+      font-size: 11px;
+      color: #757575;
+      line-height: 33px;
+    }
+  }
+
+  @media (min-width: 1300px) {
+    .header-top {
+      right: 50%;
+      height: 24px;
+      line-height: 24px;
+      margin-right: -660px;
+      z-index: 5;
+    }
   }
 
 </style>

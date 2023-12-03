@@ -102,6 +102,5 @@ export default {
 </script>
 
 <style>
-@import "../../style/customer.css";
 
 </style>

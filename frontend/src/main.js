@@ -3,6 +3,9 @@ import App from './App.vue'
 import store from "@/scripts/store";
 import {createRouter, createWebHistory} from 'vue-router';
 
+//Font
+import "@/assets/style/fonts.css";
+
 // url
 import Home from "@/pages/User/Home.vue";
 import Login from "@/pages/User/Login.vue";
