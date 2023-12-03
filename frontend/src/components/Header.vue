@@ -63,14 +63,8 @@
           </div>
         </div>
       </section>
-      <div
-          role="menuitem"
-          aria-expanded="false"
-          id="header-in"
-          style="height: 300px; z-index: 8097; border-bottom: 1px solid rgb(220, 225, 230)"
-      >
-        <div>
-          <nav>
+      <div role="menuitem" class="header-in" aria-expanded="false" id="header-in" style="height: 300px; z-index: 8097; border-bottom: 1px solid rgb(220, 225, 230)">
+        <div><nav>
             <ul>
               <li>
                 ddddddddddddddddddddd
@@ -163,16 +157,14 @@ export default {
   #header {
     position: relative;
     background-color: rgb(255, 255, 255);
-    padding: 0px 20px;
     z-index: 5;
-    border-bottom: 1px solid rgb(220, 225, 230);
-
   }
 
   #header>section {
     display: flex;
     -webkit-box-pack: center;
     justify-content: center;
+    border-bottom: 1px solid rgb(220, 225, 230);
   }
 
   #header-main {
@@ -184,6 +176,8 @@ export default {
     width: 100%;
     max-width: 1200px;
     height: 64px;
+    padding: 0px 20px;
+
   }
 
   #header-main .mypage {
@@ -433,6 +427,7 @@ export default {
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     max-width: 1160px;
+    padding-left: 10px;
   }
 
   #header-in>div>nav>ul>li {
