@@ -36,7 +36,7 @@
       </div>
       <!-- End Copyright -->
       <div id="back-to-top" class="back-to-top">
-        <button class="btn btn-dark" title="Back to Top" style="display: block;">
+        <button v-on:click="scrollToTop" class="btn btn-dark" title="Back to Top" style="display: block;">
           <i class="fa fa-angle-up"></i>
         </button>
       </div>
@@ -48,7 +48,15 @@
 
 <script>
 export default {
-  name: 'Footer'
+  name: 'Footer',
+  methods: {
+    scrollToTop: function (){
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  }
 }
 </script>
 

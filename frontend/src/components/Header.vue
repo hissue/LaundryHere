@@ -75,7 +75,7 @@
                   <div class="counter"><span>6</span></div>
                 </div>
               </button>
-              <div id="profile-in">
+              <div id="profile-in" style="display: none">
                 <div class="container">
                   <article class="container-in">
                     <header><section><h1 class="">알림</h1></section>
@@ -92,14 +92,14 @@
                 <img src="https://res.cloudinary.com/eightcruz/image/upload/c_lfill,h_120,w_120/default_profile_img1_n2v2nx" alt="프로필 이미지">
               </button>
             </div>
-            <button class=""><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 18h18v-2H3v2Zm0-5h18v-2H3v2Zm0-7v2h18V6H3Z" fill="#000"></path></svg></button>
+            <button v-on:click="sideMenuFunc"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 18h18v-2H3v2Zm0-5h18v-2H3v2Zm0-7v2h18V6H3Z" fill="#000"></path></svg></button>
           </div>
         </div>
       </section>
     </div>
   </header>
   <!--End Header Section-->
-  <div class="m_menu">
+  <div id="sideMenu" style="display: none" class="m_menu">
     <div class="inner">
       <ul class="right_menu">
         <li class="gnb8"><a href="#">블랙라벨</a>
@@ -144,7 +144,14 @@ export default {
         alter_box.style.display = 'none';
       }
     },
-
+    sideMenuFunc: function (){
+      let s_menu = document.getElementById('sideMenu');
+      if (s_menu.style.display === 'none') {
+        s_menu.style.display = 'block';
+      } else {
+        s_menu.style.display = 'none';
+      }
+    }
   }
 }
 
@@ -460,7 +467,6 @@ export default {
     z-index: 15;
     width: 320px;
     animation: 0.2s ease-out 0s 1 normal forwards running open;
-    display: none;
   }
 
   #profile-in .container {
